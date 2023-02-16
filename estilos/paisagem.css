@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+/* Aparelho deitado (landscape)*/
+
+@media screen and (orientation:landscape) and (min-width: 640px) {
+
+    header {
+        background-image: url(../imagens/cev-landscape.jpg);
+        background-position: left bottom;
+    }
+
+    main > ul {
+        columns: 2;
+    }
+}

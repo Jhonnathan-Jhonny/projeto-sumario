@@ -2,11 +2,43 @@
 
 /* Aparelho deitado (landscape)*/
 
-@media screen and (orientation:landscape) and (min-width: 640px) {
+@media screen and (orientation:landscape) and (min-width:649px){
 
     header {
+        width: 98.75vw;
         background-image: url(../imagens/cev-landscape.jpg);
         background-position: left bottom;
+    }
+}
+
+@media screen and (min-width:649px) {
+
+    span#burguer {
+        display: none;
+    }
+
+    menu.curso_video {
+        display: block;
+        background-color: white;
+        box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.411);
+        margin: 5px;
+    }
+
+    menu > ul > li {
+        display: inline-block;
+        background-color: aliceblue;
+        margin: 0px;
+        border: none;
+    }
+
+    menu > ul > li:hover{
+        background-color: #233dff73;
+        font-weight: bold;
+        transition: background-color 1s,font-weight 1s;
+    }
+
+    menu > ul > li > a {
+        color: black;
     }
 
     main > ul {

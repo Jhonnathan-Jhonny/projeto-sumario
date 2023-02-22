@@ -10,43 +10,43 @@
 }
 
 body, html {
-    background-color: antiquewhite;
+    background-color: lightgray;
 }
 
 header {
-    width: 100vw;
+    width: 96.6vw;
     height: 500px;
     background-color: #233eff;
     background-size: contain;
     background-repeat: no-repeat;
     background-image: url(../imagens/cev-portrait.jpg);
     background-position: center bottom;
+
 }
 
 span#burguer {
     display: block;
     color: white;
-    background-color: rgba(0, 0, 0, 0.637);
+    background-color: #233dff;
     text-align: center;
     padding: 10px;
-    width: 100vw;
+    width: 96.6vw;
 }
 
 span#burguer:hover {
-    background-color: rgba(0, 0, 0, 0.767);
-    color: black;
+    background-color: #233dffc4;
+    color: blue;
     cursor: pointer;
 }
 
-::-webkit-scrollbar {
+/*  Apagar barras de rolagem */
+/* ::-webkit-scrollbar {
     width: 0px;
     height: 0px;
-} 
+}  */
 
 
 menu {
-    padding: 20px;
-    background-color: darkgrey;
     margin: auto;
     text-align: center;
 }
@@ -55,19 +55,31 @@ menu > ul {
     list-style-type: none;
 }
 
+menu > ul > li {
+    padding: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.356);
+    margin: 5px;
+    background-color: darkgrey;
+}
+
 menu > ul > li > a {
     color: white;
     text-decoration: none;
 }
 
 menu.curso_video {
-    width: 300px;
     display: none;
 }
 
 main {
     width: 90vw;
     margin: auto;
+}
+
+main > iframe {
+    height: 800px;
+    width: 100%;
+    background-color: white;
 }
 
 main > h2 {

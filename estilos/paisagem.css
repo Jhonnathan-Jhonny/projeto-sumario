@@ -33,7 +33,8 @@
     }
 
     menu > ul > li:hover{
-        background-color: #233dff73;
+        background-color: var(--cor4);
+        color: white;
         transition: background-color 1s;
     }
 
@@ -41,7 +42,20 @@
         color: black;
     }
 
+    menu > ul > li > a:hover {
+        color: white;
+    }
+
+    main > iframe {
+        background-image: url(../imagens/cursoemvideo-logo.png);
+        background-size: 400px;
+    }
+
     main > ul {
         columns: 2;
+    }
+
+    footer {
+        font-size: 1.3em;
     }
 }

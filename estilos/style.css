@@ -86,8 +86,10 @@ menu > ul > li > a {
 main {
     width: 90vw;
     margin: auto;
-    box-shadow: 0px 0px 15px #00000062;
+    box-shadow: 0px 0px 15px #0000002d;
     border-radius: 10px;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 main > iframe {
@@ -95,21 +97,42 @@ main > iframe {
     width: 100%;
     background-color: white;
     border-radius: 10px;
+    background: white url(../imagens/logo-curso-em-video.png) center center no-repeat ;
+    background-size: 100px;
 }
 
 main > h2 {
     text-align: center;
     padding: 30px;
-    background-color: lightgrey;
+    background-color: var(--cor3);
+    color: white;
 }
 
 main > ul {
-    list-style-type: '\25B6\00A0';
+    list-style-type: '\25B6\00A0\00A0';
     list-style-position: inside;
-    background-color: white;
+    font-size: 1.05em;
 }
 
 main > ul > li {
-    padding: 7px;
+    padding: 10px;
     line-height: 30px;
+}
+
+footer {
+    background-color: var(--cor0);
+    color: white;
+    font-weight: lighter;
+    font-size: 1em;
+    text-align: center;
+    padding: 10px;
+}
+
+footer a {
+    color: var(--cor4);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }

@@ -5,7 +5,7 @@
 @media screen and (orientation:landscape) and (min-width:649px){
 
     header {
-        width: 98.75vw;
+        width: 98.5vw;
         background-image: url(../imagens/cev-landscape.jpg);
         background-position: left bottom;
     }
@@ -26,15 +26,15 @@
 
     menu > ul > li {
         display: inline-block;
-        background-color: aliceblue;
+        background-color: white;
         margin: 0px;
         border: none;
+        font-weight: bold;
     }
 
     menu > ul > li:hover{
         background-color: #233dff73;
-        font-weight: bold;
-        transition: background-color 1s,font-weight 1s;
+        transition: background-color 1s;
     }
 
     menu > ul > li > a {

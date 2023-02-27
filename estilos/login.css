@@ -102,7 +102,7 @@ form > input[type=submit] {
     cursor: pointer;
 }
 
-form > a {
+form  a {
     text-align: center;
     background-color: white;
     color: black;
@@ -111,7 +111,6 @@ form > a {
     height: 30px;
     font-size: 1.3em;
     border-radius: 10px;
-    border: none;
-    cursor: pointer;
     text-decoration: none;
+    margin-top: 15px;
 }

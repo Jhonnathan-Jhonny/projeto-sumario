@@ -101,3 +101,17 @@ form > input[type=submit] {
     border: none;
     cursor: pointer;
 }
+
+form > a {
+    text-align: center;
+    background-color: white;
+    color: black;
+    display: block;
+    width: 100%;
+    height: 30px;
+    font-size: 1.3em;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}

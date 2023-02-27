@@ -4,58 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sumário - HTML5 / CSS3</title>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="shortcut icon" href="imagens/curso-video.ico" type="image/x-icon">
-    <link rel="stylesheet" href="estilos/style.css">
-    <link rel="stylesheet" href="estilos/paisagem.css">
+    <title>Login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+    <link rel="stylesheet" href="estilos/login.css">
 </head>
-<body onresize="mudouTamanho()">
-    <header>
-    </header>
-    <span id="burguer" class="material-icons" onclick="menuMostrar()">favorite</span>
-    <menu id="itens" class="curso_video">
-        <ul>
-            <li><a href="index.html">Página inical</a></li>
-            <li><a href="paginas/modulo01.html" target="tela">Módulo 1</a></li>
-            <li><a href="paginas/modulo02.html" target="tela">Módulo 2</a></li>
-            <li><a href="paginas/modulo03.html" target="tela">Módulo 3</a></li>
-            <li><a href="paginas/modulo04.html" target="tela">Módulo 4</a></li>
-        </ul>
-    </menu>
-    </menu>
-    
+<body>
     <main>
-        <iframe name="tela" frameborder="0">
-            Seu navegador não é compatível com isso, escolha uma opção:
-            <a href="modulo01.html" target="_blank">Módulo 1</a>
-            <a href="modulo02.html" target="_blank">Módulo 2</a>
-            <a href="modulo03.html" target="_blank">Módulo 3</a>
-            <a href="modulo04.html" target="_blank">Módulo 4</a>
-        </iframe>
+        <section id="login">
+            <div id="imagem">
+            </div>
+            <div id="formulario">
+                <h1>Login</h1>
+                <p>Seja bem vindo, cadastre-se para ter acesso ao sumário do curso de HTML5 e CSS3 desenvolvido pelo <strong><a href="https://www.cursoemvideo.com/" target="_blank" rel="external">Curso em Video</a></strong></p>
+                <form action="index.html" method="post" autocomplete="on">
+                    <div class="campo">
+                        <label for="iemail"><span class="material-symbols-outlined">account_circle</span></label>
+                        <input type="email" name="email" id="iemail" placeholder="Seu email" autocomplete="email" required>
+                    </div>
+                    <div class="campo">
+                        <label for="isenha"><span class="material-symbols-outlined">lock</span></label>
+                        <input type="password" name="senha" id="isenha" placeholder="Sua senha" autocomplete="new-password" required minlength="6" maxlength="16">
+                    </div>
+                    
+                    <input type="submit" value="Entrar">
+
+                </form>
+            </div>
+        </section>
     </main>
-
-    <footer> 
-        <p>Site criado por <a href="https://www.instagram.com/jhonnathan_jhonny/?hl=pt-br" target="_blank" rel="external">Jhonnathan</a>, com objetivo de estudos.</p>
-    </footer>
-
-    <script>
-        function mudouTamanho(){
-            if (window.innerWidth >= 649) {
-                itens.style.display = 'block'
-            }
-            else {
-                itens.style.display = 'none'
-            }
-        }
-        function menuMostrar() {
-            if (itens.style.display == 'block'){
-                itens.style.display = 'none'
-            }
-            else {
-                itens.style.display = 'block'
-            }
-        }
-    </script>
 </body>
 </html>

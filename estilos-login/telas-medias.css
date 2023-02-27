@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    body, html {
+        background-image: linear-gradient(to bottom, var(--cor4), var(--cor0));
+    }
+   
+    section#login {
+        width: 700px;
+        height: 310px;
+    }
+
+    section#login > div#formulario > p {
+        margin-left: 260px;
+    }
+
+    section#login > div#imagem {
+        float: left;
+        width: 250px;
+        height: 100%;
+
+        background-image:url(../imagens/foto-dinamica-login-media.jpg);
+    }
+
+    form > div.campo, form > div.campo > input, form  a {
+        width: 350px;
+        float: right;
+        margin-right: 40px;
+    }
+
+    form > div.campo > input {
+        width: 300px;
+    }
+}

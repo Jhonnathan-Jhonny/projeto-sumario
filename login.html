@@ -9,28 +9,28 @@
     <link rel="stylesheet" href="estilos/login.css">
 </head>
 <body>
-    <section id="login">
-        <div id="imagem">
-        </div>
-        <div id="formulário">
-            <h1>Login</h1>
-            <p>Seja bem vindo, cadastre-se para ter acesso ao sumário do curso de HTML5 e CSS3 desenvolvido pelo <strong><a href="https://www.cursoemvideo.com/" target="_blank" rel="external">Curso em Video</a></strong></p>
-            <form action="index.html" method="post" autocomplete="on">
-                <div>
-                    <label for="iemail"><span class="material-symbols-outlined">account_circle</span></label>
-                    <input type="email" name="email" id="iemail">
-                </div>
-                <div>
-                    <label for="isenha"><span class="material-symbols-outlined">
-                        lock
-                        </span></label>
-                    <input type="password" name="senha" id="isenha">
-                </div>
-                <div>
+    <main>
+        <section id="login">
+            <div id="imagem">
+            </div>
+            <div id="formulario">
+                <h1>Login</h1>
+                <p>Seja bem vindo, cadastre-se para ter acesso ao sumário do curso de HTML5 e CSS3 desenvolvido pelo <strong><a href="https://www.cursoemvideo.com/" target="_blank" rel="external">Curso em Video</a></strong></p>
+                <form action="index.html" method="post" autocomplete="on">
+                    <div class="campo">
+                        <label for="iemail"><span class="material-symbols-outlined">account_circle</span></label>
+                        <input type="email" name="email" id="iemail" placeholder="Seu email" autocomplete="email" required>
+                    </div>
+                    <div class="campo">
+                        <label for="isenha"><span class="material-symbols-outlined">lock</span></label>
+                        <input type="password" name="senha" id="isenha" placeholder="Sua senha" autocomplete="new-password" required minlength="6" maxlength="16">
+                    </div>
+                    
                     <input type="submit" value="Entrar">
-                </div>
-            </form>
-        </div>
-    </section>
+
+                </form>
+            </div>
+        </section>
+    </main>
 </body>
 </html>

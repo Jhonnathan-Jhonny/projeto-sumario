@@ -70,6 +70,7 @@ section#login div#formulario > p > strong > a {
     color: black;
 }
 
+
 form > div.campo {
     display: block;
     position: relative;
@@ -93,7 +94,7 @@ form > div.campo > input {
     border: none;
 }
 
-/* form > input[type=submit] {
+/* form  input[type=submit] {
     display: block;
     width: 100%;
     height: 30px;
@@ -104,6 +105,7 @@ form > div.campo > input {
 } */
 
 form  a {
+    position: relative;
     text-align: center;
     background-color: white;
     color: black;
@@ -114,4 +116,21 @@ form  a {
     border-radius: 10px;
     text-decoration: none;
     margin-top: 15px;
+}
+
+form > a:hover {
+    background-color: var(--cor2);
+    color: white;
+}
+
+form > a > h1 {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%,-50%);
+
+    font-weight: lighter;
+    font-size: 1em;
 }

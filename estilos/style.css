@@ -146,9 +146,8 @@ main > ul > li > a:hover {
     text-decoration: underline;    
 }
 
-main > ul > li > a::after {
+main > ul > li > a::before {
     content: '\1F517';
-
 }
 
 main > ul > li > a:active {
